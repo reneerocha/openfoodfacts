@@ -1,0 +1,36 @@
+---
+openapi: 3.0.1
+info:
+  title: API V1
+  version: v1
+paths:
+  "/home/index":
+    get:
+      summary: list homes
+      responses:
+        '200':
+          description: successful
+  "/products":
+    get:
+      summary: list products
+      responses:
+        '200':
+          description: successful
+  "/products/{code}":
+    parameters:
+    - name: code
+      in: path
+      description: code
+      required: true
+      schema:
+        type: string
+    get:
+      summary: show product
+      responses:
+        '200':
+          description: successful
+servers:
+- url: https://{defaultHost}
+  variables:
+    defaultHost:
+      default: www.example.com

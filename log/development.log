@@ -1,0 +1,452 @@
+[b4626d13-672f-40f1-9166-49b2e418dfb4] Started GET "/" for 172.29.0.1 at 2023-09-27 19:53:17 +0000
+[b4626d13-672f-40f1-9166-49b2e418dfb4] Processing by HomeController#index as HTML
+[b4626d13-672f-40f1-9166-49b2e418dfb4] Completed 200 OK in 14ms (Views: 0.4ms | MongoDB: 0.0ms | Allocations: 2288)
+
+
+[9fc6126b-3fae-41b1-a351-8e9db9b178c1] Started GET "/favicon.ico" for 172.29.0.1 at 2023-09-27 19:53:17 +0000
+[9fc6126b-3fae-41b1-a351-8e9db9b178c1]   
+[9fc6126b-3fae-41b1-a351-8e9db9b178c1] ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+[9fc6126b-3fae-41b1-a351-8e9db9b178c1]   
+[7e222a26-643d-4e42-b7eb-1fff04c9a846] Started GET "/" for 172.29.0.1 at 2023-09-27 19:55:58 +0000
+[7e222a26-643d-4e42-b7eb-1fff04c9a846] Processing by HomeController#index as HTML
+[7e222a26-643d-4e42-b7eb-1fff04c9a846] Completed 200 OK in 0ms (Views: 0.2ms | MongoDB: 0.0ms | Allocations: 93)
+
+
+[cf0c8ac7-3a7f-4ebe-a40d-16fbf9c82bb2] Started GET "/products" for 172.29.0.1 at 2023-09-27 19:56:09 +0000
+[cf0c8ac7-3a7f-4ebe-a40d-16fbf9c82bb2] Processing by ProductsController#index as HTML
+[cf0c8ac7-3a7f-4ebe-a40d-16fbf9c82bb2] MONGODB | Topology type 'unknown' initializing.
+[cf0c8ac7-3a7f-4ebe-a40d-16fbf9c82bb2] MONGODB | There was a change in the members of the 'Unknown' topology.
+[cf0c8ac7-3a7f-4ebe-a40d-16fbf9c82bb2] MONGODB | Server mongo-db:27017 initializing.
+[cf0c8ac7-3a7f-4ebe-a40d-16fbf9c82bb2] MONGODB | Waiting for up to 30.00 seconds for servers to be scanned: #<Cluster topology=Unknown[mongo-db:27017] servers=[#<Server address=mongo-db:27017 UNKNOWN>]>
+MONGODB | Server description for mongo-db:27017 changed from 'unknown' to 'standalone'.
+MONGODB | Topology type 'Unknown' changed to type 'Single'.
+[cf0c8ac7-3a7f-4ebe-a40d-16fbf9c82bb2] MONGODB | mongo-db:27017 req:6 conn:1:1 sconn:6 | app_development.find | STARTED | {"find"=>"products", "filter"=>{}, "limit"=>25, "skip"=>0, "$db"=>"app_development", "lsid"=>{"id"=><BSON::Binary:0x12140 type=uuid data=0x0476eeed44784518...>}}
+[cf0c8ac7-3a7f-4ebe-a40d-16fbf9c82bb2] MONGODB | mongo-db:27017 req:6 | app_development.find | SUCCEEDED | 0.001s
+[cf0c8ac7-3a7f-4ebe-a40d-16fbf9c82bb2] Completed 200 OK in 56ms (Views: 22.0ms | MongoDB: 1.2ms | Allocations: 11296)
+
+
+MONGODB | Server description for mongo-db:27017 changed from 'standalone' to 'standalone'.
+MONGODB | There was a change in the members of the 'Single' topology.
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Server mongo-db:27017 initializing.
+MONGODB | Waiting for up to 30.00 seconds for servers to be scanned: #<Cluster topology=Unknown[mongo-db:27017] servers=[#<Server address=mongo-db:27017 UNKNOWN>]>
+MONGODB | Server description for mongo-db:27017 changed from 'unknown' to 'standalone'.
+MONGODB | Topology type 'Unknown' changed to type 'Single'.
+MONGODB | mongo-db:27017 req:6 conn:1:1 sconn:3 | app_development.find | STARTED | {"find"=>"products", "filter"=>{"code"=>"3274080005003"}, "limit"=>1, "sort"=>{"_id"=>1}, "$db"=>"app_development", "lsid"=>{"id"=><BSON::Binary:0x60180 type=uuid data=0x65837adac3694389...>}}
+MONGODB | mongo-db:27017 req:6 | app_development.find | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:7 conn:1:1 sconn:3 | app_development.insert | STARTED | {"insert"=>"products", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('651488f5e6f1900001b2a55a'), "code"=>"3274080005003", "barcode"=>"3274080005003 (EAN / EAN-13)", "url"=>"https://world.openfoodfacts.org/product/3274080005003/eau-de-source-c...
+MONGODB | mongo-db:27017 req:7 | app_development.insert | SUCCEEDED | 0.010s
+MONGODB | mongo-db:27017 req:8 conn:1:1 sconn:3 | app_development.find | STARTED | {"find"=>"products", "filter"=>{"code"=>"3017620422003"}, "limit"=>1, "sort"=>{"_id"=>1}, "$db"=>"app_development", "lsid"=>{"id"=><BSON::Binary:0x60180 type=uuid data=0x65837adac3694389...>}}
+MONGODB | mongo-db:27017 req:8 | app_development.find | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:9 conn:1:1 sconn:3 | app_development.insert | STARTED | {"insert"=>"products", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('651488f5e6f1900001b2a55b'), "code"=>"3017620422003", "barcode"=>"3017620422003 (EAN / EAN-13)", "url"=>"https://world.openfoodfacts.org/product/3017620422003/nutella-ferrero...
+MONGODB | mongo-db:27017 req:9 | app_development.insert | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:10 conn:1:1 sconn:3 | app_development.find | STARTED | {"find"=>"products", "filter"=>{"code"=>"7622210449283"}, "limit"=>1, "sort"=>{"_id"=>1}, "$db"=>"app_development", "lsid"=>{"id"=><BSON::Binary:0x60180 type=uuid data=0x65837adac3694389...>}}
+MONGODB | mongo-db:27017 req:10 | app_development.find | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:11 conn:1:1 sconn:3 | app_development.insert | STARTED | {"insert"=>"products", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('651488f6e6f1900001b2a55c'), "code"=>"7622210449283", "barcode"=>"7622210449283 (EAN / EAN-13)", "url"=>"https://world.openfoodfacts.org/product/7622210449283/prince-chocolat...
+MONGODB | mongo-db:27017 req:11 | app_development.insert | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:12 conn:1:1 sconn:3 | app_development.find | STARTED | {"find"=>"products", "filter"=>{"code"=>"5449000214911"}, "limit"=>1, "sort"=>{"_id"=>1}, "$db"=>"app_development", "lsid"=>{"id"=><BSON::Binary:0x60180 type=uuid data=0x65837adac3694389...>}}
+MONGODB | mongo-db:27017 req:12 | app_development.find | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:13 conn:1:1 sconn:3 | app_development.insert | STARTED | {"insert"=>"products", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('651488f6e6f1900001b2a55d'), "code"=>"5449000214911", "barcode"=>"5449000214911 (EAN / EAN-13)", "url"=>"https://world.openfoodfacts.org/product/5449000214911/coca-cola", "pr...
+MONGODB | mongo-db:27017 req:13 | app_development.insert | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:14 conn:1:1 sconn:3 | app_development.find | STARTED | {"find"=>"products", "filter"=>{"code"=>"3017620425035"}, "limit"=>1, "sort"=>{"_id"=>1}, "$db"=>"app_development", "lsid"=>{"id"=><BSON::Binary:0x60180 type=uuid data=0x65837adac3694389...>}}
+MONGODB | mongo-db:27017 req:14 | app_development.find | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:15 conn:1:1 sconn:3 | app_development.insert | STARTED | {"insert"=>"products", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('651488f7e6f1900001b2a55e'), "code"=>"3017620425035", "barcode"=>"3017620425035 (EAN / EAN-13)", "url"=>"https://world.openfoodfacts.org/product/3017620425035/nutella-ferrero...
+MONGODB | mongo-db:27017 req:15 | app_development.insert | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:16 conn:1:1 sconn:3 | app_development.find | STARTED | {"find"=>"products", "filter"=>{"code"=>"5449000214799"}, "limit"=>1, "sort"=>{"_id"=>1}, "$db"=>"app_development", "lsid"=>{"id"=><BSON::Binary:0x60180 type=uuid data=0x65837adac3694389...>}}
+MONGODB | mongo-db:27017 req:16 | app_development.find | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:17 conn:1:1 sconn:3 | app_development.insert | STARTED | {"insert"=>"products", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('651488f7e6f1900001b2a55f'), "code"=>"5449000214799", "barcode"=>"5449000214799 (EAN / EAN-13)", "url"=>"https://world.openfoodfacts.org/product/5449000214799/coca-cola-zero"...
+MONGODB | mongo-db:27017 req:17 | app_development.insert | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:18 conn:1:1 sconn:3 | app_development.find | STARTED | {"find"=>"products", "filter"=>{"code"=>"3175680011480"}, "limit"=>1, "sort"=>{"_id"=>1}, "$db"=>"app_development", "lsid"=>{"id"=><BSON::Binary:0x60180 type=uuid data=0x65837adac3694389...>}}
+MONGODB | mongo-db:27017 req:18 | app_development.find | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:19 conn:1:1 sconn:3 | app_development.insert | STARTED | {"insert"=>"products", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('651488f8e6f1900001b2a560'), "code"=>"3175680011480", "barcode"=>"3175680011480 (EAN / EAN-13)", "url"=>"https://world.openfoodfacts.org/product/3175680011480/gerble-sesame-c...
+MONGODB | mongo-db:27017 req:19 | app_development.insert | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:20 conn:1:1 sconn:3 | app_development.find | STARTED | {"find"=>"products", "filter"=>{"code"=>"8000500310427"}, "limit"=>1, "sort"=>{"_id"=>1}, "$db"=>"app_development", "lsid"=>{"id"=><BSON::Binary:0x60180 type=uuid data=0x65837adac3694389...>}}
+MONGODB | mongo-db:27017 req:20 | app_development.find | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:21 conn:1:1 sconn:3 | app_development.insert | STARTED | {"insert"=>"products", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('651488f9e6f1900001b2a561'), "code"=>"8000500310427", "barcode"=>"8000500310427 (EAN / EAN-13)", "url"=>"https://world.openfoodfacts.org/product/8000500310427/ferrero-nutella...
+MONGODB | mongo-db:27017 req:21 | app_development.insert | SUCCEEDED | 0.000s
+MONGODB | mongo-db:27017 req:22 conn:1:1 sconn:3 | app_development.find | STARTED | {"find"=>"products", "filter"=>{"code"=>"3168930010265"}, "limit"=>1, "sort"=>{"_id"=>1}, "$db"=>"app_development", "lsid"=>{"id"=><BSON::Binary:0x60180 type=uuid data=0x65837adac3694389...>}}
+MONGODB | mongo-db:27017 req:22 | app_development.find | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:23 conn:1:1 sconn:3 | app_development.insert | STARTED | {"insert"=>"products", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('651488f9e6f1900001b2a562'), "code"=>"3168930010265", "barcode"=>"3168930010265 (EAN / EAN-13)", "url"=>"https://world.openfoodfacts.org/product/3168930010265/cruesli-melange...
+MONGODB | mongo-db:27017 req:23 | app_development.insert | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:24 conn:1:1 sconn:3 | app_development.find | STARTED | {"find"=>"products", "filter"=>{"code"=>"7613034626844"}, "limit"=>1, "sort"=>{"_id"=>1}, "$db"=>"app_development", "lsid"=>{"id"=><BSON::Binary:0x60180 type=uuid data=0x65837adac3694389...>}}
+MONGODB | mongo-db:27017 req:24 | app_development.find | SUCCEEDED | 0.002s
+MONGODB | mongo-db:27017 req:25 conn:1:1 sconn:3 | app_development.insert | STARTED | {"insert"=>"products", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('651488fae6f1900001b2a563'), "code"=>"7613034626844", "barcode"=>"7613034626844 (EAN / EAN-13)", "url"=>"https://world.openfoodfacts.org/product/7613034626844/cereales-chocap...
+MONGODB | mongo-db:27017 req:25 | app_development.insert | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:26 conn:1:1 sconn:3 | app_development.find | STARTED | {"find"=>"products", "filter"=>{"code"=>"3760020507350"}, "limit"=>1, "sort"=>{"_id"=>1}, "$db"=>"app_development", "lsid"=>{"id"=><BSON::Binary:0x60180 type=uuid data=0x65837adac3694389...>}}
+MONGODB | mongo-db:27017 req:26 | app_development.find | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:27 conn:1:1 sconn:3 | app_development.insert | STARTED | {"insert"=>"products", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('651488fae6f1900001b2a564'), "code"=>"3760020507350", "barcode"=>"3760020507350 (EAN / EAN-13)", "url"=>"https://world.openfoodfacts.org/product/3760020507350/pur-beurre-de-c...
+MONGODB | mongo-db:27017 req:27 | app_development.insert | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:28 conn:1:1 sconn:3 | app_development.find | STARTED | {"find"=>"products", "filter"=>{"code"=>"3229820019307"}, "limit"=>1, "sort"=>{"_id"=>1}, "$db"=>"app_development", "lsid"=>{"id"=><BSON::Binary:0x60180 type=uuid data=0x65837adac3694389...>}}
+MONGODB | mongo-db:27017 req:28 | app_development.find | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:29 conn:1:1 sconn:3 | app_development.insert | STARTED | {"insert"=>"products", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('651488fbe6f1900001b2a565'), "code"=>"3229820019307", "barcode"=>"3229820019307 (EAN / EAN-13)", "url"=>"https://world.openfoodfacts.org/product/3229820019307/flocons-d-avoin...
+MONGODB | mongo-db:27017 req:29 | app_development.insert | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:30 conn:1:1 sconn:3 | app_development.find | STARTED | {"find"=>"products", "filter"=>{"code"=>"3268840001008"}, "limit"=>1, "sort"=>{"_id"=>1}, "$db"=>"app_development", "lsid"=>{"id"=><BSON::Binary:0x60180 type=uuid data=0x65837adac3694389...>}}
+MONGODB | mongo-db:27017 req:30 | app_development.find | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:31 conn:1:1 sconn:3 | app_development.insert | STARTED | {"insert"=>"products", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('651488fbe6f1900001b2a566'), "code"=>"3268840001008", "barcode"=>"3268840001008 (EAN / EAN-13)", "url"=>"https://world.openfoodfacts.org/product/3268840001008/eau-de-source-c...
+MONGODB | mongo-db:27017 req:31 | app_development.insert | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:32 conn:1:1 sconn:3 | app_development.find | STARTED | {"find"=>"products", "filter"=>{"code"=>"5449000000996"}, "limit"=>1, "sort"=>{"_id"=>1}, "$db"=>"app_development", "lsid"=>{"id"=><BSON::Binary:0x60180 type=uuid data=0x65837adac3694389...>}}
+MONGODB | mongo-db:27017 req:32 | app_development.find | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:33 conn:1:1 sconn:3 | app_development.insert | STARTED | {"insert"=>"products", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('651488fbe6f1900001b2a567'), "code"=>"5449000000996", "barcode"=>"5449000000996 (EAN / EAN-13)", "url"=>"https://world.openfoodfacts.org/product/5449000000996/coca-cola-coca-...
+MONGODB | mongo-db:27017 req:33 | app_development.insert | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:34 conn:1:1 sconn:3 | app_development.find | STARTED | {"find"=>"products", "filter"=>{"code"=>"5449000131805"}, "limit"=>1, "sort"=>{"_id"=>1}, "$db"=>"app_development", "lsid"=>{"id"=><BSON::Binary:0x60180 type=uuid data=0x65837adac3694389...>}}
+MONGODB | mongo-db:27017 req:34 | app_development.find | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:35 conn:1:1 sconn:3 | app_development.insert | STARTED | {"insert"=>"products", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('651488fce6f1900001b2a568'), "code"=>"5449000131805", "barcode"=>"5449000131805 (EAN / EAN-13)", "url"=>"https://world.openfoodfacts.org/product/5449000131805/coca-cola-zero"...
+MONGODB | mongo-db:27017 req:35 | app_development.insert | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:36 conn:1:1 sconn:3 | app_development.find | STARTED | {"find"=>"products", "filter"=>{"code"=>"3228857000166"}, "limit"=>1, "sort"=>{"_id"=>1}, "$db"=>"app_development", "lsid"=>{"id"=><BSON::Binary:0x60180 type=uuid data=0x65837adac3694389...>}}
+MONGODB | mongo-db:27017 req:36 | app_development.find | SUCCEEDED | 0.002s
+MONGODB | mongo-db:27017 req:37 conn:1:1 sconn:3 | app_development.insert | STARTED | {"insert"=>"products", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('651488fce6f1900001b2a569'), "code"=>"3228857000166", "barcode"=>"3228857000166 (EAN / EAN-13)", "url"=>"https://world.openfoodfacts.org/product/3228857000166/pain-100-mie-co...
+MONGODB | mongo-db:27017 req:37 | app_development.insert | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:38 conn:1:1 sconn:3 | app_development.find | STARTED | {"find"=>"products", "filter"=>{"code"=>"8001505005592"}, "limit"=>1, "sort"=>{"_id"=>1}, "$db"=>"app_development", "lsid"=>{"id"=><BSON::Binary:0x60180 type=uuid data=0x65837adac3694389...>}}
+MONGODB | mongo-db:27017 req:38 | app_development.find | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:39 conn:1:1 sconn:3 | app_development.insert | STARTED | {"insert"=>"products", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('651488fde6f1900001b2a56a'), "code"=>"8001505005592", "barcode"=>"8001505005592 (EAN / EAN-13)", "url"=>"https://world.openfoodfacts.org/product/8001505005592/nocciolata-pate...
+MONGODB | mongo-db:27017 req:39 | app_development.insert | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:40 conn:1:1 sconn:3 | app_development.find | STARTED | {"find"=>"products", "filter"=>{"code"=>"80135463"}, "limit"=>1, "sort"=>{"_id"=>1}, "$db"=>"app_development", "lsid"=>{"id"=><BSON::Binary:0x60180 type=uuid data=0x65837adac3694389...>}}
+MONGODB | mongo-db:27017 req:40 | app_development.find | SUCCEEDED | 0.002s
+MONGODB | mongo-db:27017 req:41 conn:1:1 sconn:3 | app_development.insert | STARTED | {"insert"=>"products", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('651488fde6f1900001b2a56b'), "code"=>"80135463", "barcode"=>"80135463", "url"=>"https://world.openfoodfacts.org/product/80135463/ferrero-nutella-chocolate-hazelnut-spread-chr...
+MONGODB | mongo-db:27017 req:41 | app_development.insert | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:42 conn:1:1 sconn:3 | app_development.find | STARTED | {"find"=>"products", "filter"=>{"code"=>"5410041001204"}, "limit"=>1, "sort"=>{"_id"=>1}, "$db"=>"app_development", "lsid"=>{"id"=><BSON::Binary:0x60180 type=uuid data=0x65837adac3694389...>}}
+MONGODB | mongo-db:27017 req:42 | app_development.find | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:43 conn:1:1 sconn:3 | app_development.insert | STARTED | {"insert"=>"products", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('651488fee6f1900001b2a56c'), "code"=>"5410041001204", "barcode"=>"5410041001204 (EAN / EAN-13)", "url"=>"https://world.openfoodfacts.org/product/5410041001204/tuc-original-lu...
+MONGODB | mongo-db:27017 req:43 | app_development.insert | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:44 conn:1:1 sconn:3 | app_development.find | STARTED | {"find"=>"products", "filter"=>{"code"=>"3029330022428"}, "limit"=>1, "sort"=>{"_id"=>1}, "$db"=>"app_development", "lsid"=>{"id"=><BSON::Binary:0x60180 type=uuid data=0x65837adac3694389...>}}
+MONGODB | mongo-db:27017 req:44 | app_development.find | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:45 conn:1:1 sconn:3 | app_development.insert | STARTED | {"insert"=>"products", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('651488fee6f1900001b2a56d'), "code"=>"3029330022428", "barcode"=>"3029330022428 (EAN / EAN-13)", "url"=>"https://world.openfoodfacts.org/product/3029330022428/pain-de-mie-com...
+MONGODB | mongo-db:27017 req:45 | app_development.insert | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:46 conn:1:1 sconn:3 | app_development.find | STARTED | {"find"=>"products", "filter"=>{"code"=>"3608580065340"}, "limit"=>1, "sort"=>{"_id"=>1}, "$db"=>"app_development", "lsid"=>{"id"=><BSON::Binary:0x60180 type=uuid data=0x65837adac3694389...>}}
+MONGODB | mongo-db:27017 req:46 | app_development.find | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:47 conn:1:1 sconn:3 | app_development.insert | STARTED | {"insert"=>"products", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('651488fee6f1900001b2a56e'), "code"=>"3608580065340", "barcode"=>"3608580065340 (EAN / EAN-13)", "url"=>"https://world.openfoodfacts.org/product/3608580065340/pate-a-tartiner...
+MONGODB | mongo-db:27017 req:47 | app_development.insert | SUCCEEDED | 0.001s
+MONGODB | Server description for mongo-db:27017 changed from 'standalone' to 'standalone'.
+MONGODB | There was a change in the members of the 'Single' topology.
+MONGODB | mongo-db:27017 req:49 conn:1:1 sconn:3 | app_development.find | STARTED | {"find"=>"products", "filter"=>{"code"=>"3229820129488"}, "limit"=>1, "sort"=>{"_id"=>1}, "$db"=>"app_development", "lsid"=>{"id"=><BSON::Binary:0x60180 type=uuid data=0x65837adac3694389...>}}
+MONGODB | mongo-db:27017 req:49 | app_development.find | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:50 conn:1:1 sconn:3 | app_development.insert | STARTED | {"insert"=>"products", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('651488ffe6f1900001b2a56f'), "code"=>"3229820129488", "barcode"=>"3229820129488 (EAN / EAN-13)", "url"=>"https://world.openfoodfacts.org/product/3229820129488/muesli-raisin-f...
+MONGODB | mongo-db:27017 req:50 | app_development.insert | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:51 conn:1:1 sconn:3 | app_development.find | STARTED | {"find"=>"products", "filter"=>{"code"=>"3229820100234"}, "limit"=>1, "sort"=>{"_id"=>1}, "$db"=>"app_development", "lsid"=>{"id"=><BSON::Binary:0x60180 type=uuid data=0x65837adac3694389...>}}
+MONGODB | mongo-db:27017 req:51 | app_development.find | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:52 conn:1:1 sconn:3 | app_development.insert | STARTED | {"insert"=>"products", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('65148900e6f1900001b2a570'), "code"=>"3229820100234", "barcode"=>"3229820100234 (EAN / EAN-13)", "url"=>"https://world.openfoodfacts.org/product/3229820100234/fourres-chocola...
+MONGODB | mongo-db:27017 req:52 | app_development.insert | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:53 conn:1:1 sconn:3 | app_development.find | STARTED | {"find"=>"products", "filter"=>{"code"=>"3017620429484"}, "limit"=>1, "sort"=>{"_id"=>1}, "$db"=>"app_development", "lsid"=>{"id"=><BSON::Binary:0x60180 type=uuid data=0x65837adac3694389...>}}
+MONGODB | mongo-db:27017 req:53 | app_development.find | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:54 conn:1:1 sconn:3 | app_development.insert | STARTED | {"insert"=>"products", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('65148900e6f1900001b2a571'), "code"=>"3017620429484", "barcode"=>"3017620429484 (EAN / EAN-13)", "url"=>"https://world.openfoodfacts.org/product/3017620429484/nutella-ferrero...
+MONGODB | mongo-db:27017 req:54 | app_development.insert | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:55 conn:1:1 sconn:3 | app_development.find | STARTED | {"find"=>"products", "filter"=>{"code"=>"3046920022651"}, "limit"=>1, "sort"=>{"_id"=>1}, "$db"=>"app_development", "lsid"=>{"id"=><BSON::Binary:0x60180 type=uuid data=0x65837adac3694389...>}}
+MONGODB | mongo-db:27017 req:55 | app_development.find | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:56 conn:1:1 sconn:3 | app_development.insert | STARTED | {"insert"=>"products", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('65148901e6f1900001b2a572'), "code"=>"3046920022651", "barcode"=>"3046920022651 (EAN / EAN-13)", "url"=>"https://world.openfoodfacts.org/product/3046920022651/chocolate-excel...
+MONGODB | mongo-db:27017 req:56 | app_development.insert | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:57 conn:1:1 sconn:3 | app_development.find | STARTED | {"find"=>"products", "filter"=>{"code"=>"5010477348678"}, "limit"=>1, "sort"=>{"_id"=>1}, "$db"=>"app_development", "lsid"=>{"id"=><BSON::Binary:0x60180 type=uuid data=0x65837adac3694389...>}}
+MONGODB | mongo-db:27017 req:57 | app_development.find | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:58 conn:1:1 sconn:3 | app_development.insert | STARTED | {"insert"=>"products", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('65148901e6f1900001b2a573'), "code"=>"5010477348678", "barcode"=>"5010477348678 (EAN / EAN-13)", "url"=>"https://world.openfoodfacts.org/product/5010477348678/special-muesli-...
+MONGODB | mongo-db:27017 req:58 | app_development.insert | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:59 conn:1:1 sconn:3 | app_development.find | STARTED | {"find"=>"products", "filter"=>{"code"=>"7622210713780"}, "limit"=>1, "sort"=>{"_id"=>1}, "$db"=>"app_development", "lsid"=>{"id"=><BSON::Binary:0x60180 type=uuid data=0x65837adac3694389...>}}
+MONGODB | mongo-db:27017 req:59 | app_development.find | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:60 conn:1:1 sconn:3 | app_development.insert | STARTED | {"insert"=>"products", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('65148902e6f1900001b2a574'), "code"=>"7622210713780", "barcode"=>"7622210713780 (EAN / EAN-13)", "url"=>"https://world.openfoodfacts.org/product/7622210713780/belvita-lu", "p...
+MONGODB | mongo-db:27017 req:60 | app_development.insert | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:61 conn:1:1 sconn:3 | app_development.find | STARTED | {"find"=>"products", "filter"=>{"code"=>"3175681851849"}, "limit"=>1, "sort"=>{"_id"=>1}, "$db"=>"app_development", "lsid"=>{"id"=><BSON::Binary:0x60180 type=uuid data=0x65837adac3694389...>}}
+MONGODB | mongo-db:27017 req:61 | app_development.find | SUCCEEDED | 0.002s
+MONGODB | mongo-db:27017 req:62 conn:1:1 sconn:3 | app_development.insert | STARTED | {"insert"=>"products", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('65148902e6f1900001b2a575'), "code"=>"3175681851849", "barcode"=>"3175681851849 (EAN / EAN-13)", "url"=>"https://world.openfoodfacts.org/product/3175681851849/gerble-apple-ha...
+MONGODB | mongo-db:27017 req:62 | app_development.insert | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:63 conn:1:1 sconn:3 | app_development.find | STARTED | {"find"=>"products", "filter"=>{"code"=>"3033491454080"}, "limit"=>1, "sort"=>{"_id"=>1}, "$db"=>"app_development", "lsid"=>{"id"=><BSON::Binary:0x60180 type=uuid data=0x65837adac3694389...>}}
+MONGODB | mongo-db:27017 req:63 | app_development.find | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:64 conn:1:1 sconn:3 | app_development.insert | STARTED | {"insert"=>"products", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('65148903e6f1900001b2a576'), "code"=>"3033491454080", "barcode"=>"3033491454080 (EAN / EAN-13)", "url"=>"https://world.openfoodfacts.org/product/3033491454080/skyr-danone", "...
+MONGODB | mongo-db:27017 req:64 | app_development.insert | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:65 conn:1:1 sconn:3 | app_development.find | STARTED | {"find"=>"products", "filter"=>{"code"=>"80177173"}, "limit"=>1, "sort"=>{"_id"=>1}, "$db"=>"app_development", "lsid"=>{"id"=><BSON::Binary:0x60180 type=uuid data=0x65837adac3694389...>}}
+MONGODB | mongo-db:27017 req:65 | app_development.find | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:66 conn:1:1 sconn:3 | app_development.insert | STARTED | {"insert"=>"products", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('65148904e6f1900001b2a577'), "code"=>"80177173", "barcode"=>"80177173", "url"=>"https://world.openfoodfacts.org/product/80177173/nutella-ferrero", "product_name"=>"Nutella - ...
+MONGODB | mongo-db:27017 req:66 | app_development.insert | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:67 conn:1:1 sconn:3 | app_development.find | STARTED | {"find"=>"products", "filter"=>{"code"=>"3033490004521"}, "limit"=>1, "sort"=>{"_id"=>1}, "$db"=>"app_development", "lsid"=>{"id"=><BSON::Binary:0x60180 type=uuid data=0x65837adac3694389...>}}
+MONGODB | mongo-db:27017 req:67 | app_development.find | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:68 conn:1:1 sconn:3 | app_development.insert | STARTED | {"insert"=>"products", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('65148904e6f1900001b2a578'), "code"=>"3033490004521", "barcode"=>"3033490004521 (EAN / EAN-13)", "url"=>"https://world.openfoodfacts.org/product/3033490004521/yaourt-nature-l...
+MONGODB | mongo-db:27017 req:68 | app_development.insert | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:69 conn:1:1 sconn:3 | app_development.find | STARTED | {"find"=>"products", "filter"=>{"code"=>"8001505005707"}, "limit"=>1, "sort"=>{"_id"=>1}, "$db"=>"app_development", "lsid"=>{"id"=><BSON::Binary:0x60180 type=uuid data=0x65837adac3694389...>}}
+MONGODB | mongo-db:27017 req:69 | app_development.find | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:70 conn:1:1 sconn:3 | app_development.insert | STARTED | {"insert"=>"products", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('65148904e6f1900001b2a579'), "code"=>"8001505005707", "barcode"=>"8001505005707 (EAN / EAN-13)", "url"=>"https://world.openfoodfacts.org/product/8001505005707/nocciolata-rigo...
+MONGODB | mongo-db:27017 req:70 | app_development.insert | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:71 conn:1:1 sconn:3 | app_development.find | STARTED | {"find"=>"products", "filter"=>{"code"=>"8002270014901"}, "limit"=>1, "sort"=>{"_id"=>1}, "$db"=>"app_development", "lsid"=>{"id"=><BSON::Binary:0x60180 type=uuid data=0x65837adac3694389...>}}
+MONGODB | mongo-db:27017 req:71 | app_development.find | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:72 conn:1:1 sconn:3 | app_development.insert | STARTED | {"insert"=>"products", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('65148905e6f1900001b2a57a'), "code"=>"8002270014901", "barcode"=>"8002270014901 (EAN / EAN-13)", "url"=>"https://world.openfoodfacts.org/product/8002270014901/s-pellegrino-wa...
+MONGODB | mongo-db:27017 req:72 | app_development.insert | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:73 conn:1:1 sconn:3 | app_development.find | STARTED | {"find"=>"products", "filter"=>{"code"=>"5449000054227"}, "limit"=>1, "sort"=>{"_id"=>1}, "$db"=>"app_development", "lsid"=>{"id"=><BSON::Binary:0x60180 type=uuid data=0x65837adac3694389...>}}
+MONGODB | mongo-db:27017 req:73 | app_development.find | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:74 conn:1:1 sconn:3 | app_development.insert | STARTED | {"insert"=>"products", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('65148905e6f1900001b2a57b'), "code"=>"5449000054227", "barcode"=>"5449000054227 (EAN / EAN-13)", "url"=>"https://world.openfoodfacts.org/product/5449000054227/coca-cola", "pr...
+MONGODB | mongo-db:27017 req:74 | app_development.insert | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:75 conn:1:1 sconn:3 | app_development.find | STARTED | {"find"=>"products", "filter"=>{"code"=>"5053990156009"}, "limit"=>1, "sort"=>{"_id"=>1}, "$db"=>"app_development", "lsid"=>{"id"=><BSON::Binary:0x60180 type=uuid data=0x65837adac3694389...>}}
+MONGODB | mongo-db:27017 req:75 | app_development.find | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:76 conn:1:1 sconn:3 | app_development.insert | STARTED | {"insert"=>"products", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('65148906e6f1900001b2a57c'), "code"=>"5053990156009", "barcode"=>"5053990156009 (EAN / EAN-13)", "url"=>"https://world.openfoodfacts.org/product/5053990156009/pringles-origin...
+MONGODB | mongo-db:27017 req:76 | app_development.insert | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:77 conn:1:1 sconn:3 | app_development.find | STARTED | {"find"=>"products", "filter"=>{"code"=>"3046920022606"}, "limit"=>1, "sort"=>{"_id"=>1}, "$db"=>"app_development", "lsid"=>{"id"=><BSON::Binary:0x60180 type=uuid data=0x65837adac3694389...>}}
+MONGODB | mongo-db:27017 req:77 | app_development.find | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:78 conn:1:1 sconn:3 | app_development.insert | STARTED | {"insert"=>"products", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('65148906e6f1900001b2a57d'), "code"=>"3046920022606", "barcode"=>"3046920022606 (EAN / EAN-13)", "url"=>"https://world.openfoodfacts.org/product/3046920022606/excellence-85-c...
+MONGODB | mongo-db:27017 req:78 | app_development.insert | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:79 conn:1:1 sconn:3 | app_development.find | STARTED | {"find"=>"products", "filter"=>{"code"=>"3046920029759"}, "limit"=>1, "sort"=>{"_id"=>1}, "$db"=>"app_development", "lsid"=>{"id"=><BSON::Binary:0x60180 type=uuid data=0x65837adac3694389...>}}
+MONGODB | mongo-db:27017 req:79 | app_development.find | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:80 conn:1:1 sconn:3 | app_development.insert | STARTED | {"insert"=>"products", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('65148907e6f1900001b2a57e'), "code"=>"3046920029759", "barcode"=>"3046920029759 (EAN / EAN-13)", "url"=>"https://world.openfoodfacts.org/product/3046920029759/dark-chocolate-...
+MONGODB | mongo-db:27017 req:80 | app_development.insert | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:81 conn:1:1 sconn:3 | app_development.find | STARTED | {"find"=>"products", "filter"=>{"code"=>"7613035974685"}, "limit"=>1, "sort"=>{"_id"=>1}, "$db"=>"app_development", "lsid"=>{"id"=><BSON::Binary:0x60180 type=uuid data=0x65837adac3694389...>}}
+MONGODB | mongo-db:27017 req:81 | app_development.find | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:82 conn:1:1 sconn:3 | app_development.insert | STARTED | {"insert"=>"products", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('65148907e6f1900001b2a57f'), "code"=>"7613035974685", "barcode"=>"7613035974685 (EAN / EAN-13)", "url"=>"https://world.openfoodfacts.org/product/7613035974685/hepar", "produc...
+MONGODB | mongo-db:27017 req:82 | app_development.insert | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:83 conn:1:1 sconn:3 | app_development.find | STARTED | {"find"=>"products", "filter"=>{"code"=>"3057640257773"}, "limit"=>1, "sort"=>{"_id"=>1}, "$db"=>"app_development", "lsid"=>{"id"=><BSON::Binary:0x60180 type=uuid data=0x65837adac3694389...>}}
+MONGODB | mongo-db:27017 req:83 | app_development.find | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:84 conn:1:1 sconn:3 | app_development.insert | STARTED | {"insert"=>"products", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('65148907e6f1900001b2a580'), "code"=>"3057640257773", "barcode"=>"3057640257773 (EAN / EAN-13)", "url"=>"https://world.openfoodfacts.org/product/3057640257773/volvic", "produ...
+MONGODB | mongo-db:27017 req:84 | app_development.insert | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:85 conn:1:1 sconn:3 | app_development.find | STARTED | {"find"=>"products", "filter"=>{"code"=>"20267605"}, "limit"=>1, "sort"=>{"_id"=>1}, "$db"=>"app_development", "lsid"=>{"id"=><BSON::Binary:0x60180 type=uuid data=0x65837adac3694389...>}}
+MONGODB | mongo-db:27017 req:85 | app_development.find | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:86 conn:1:1 sconn:3 | app_development.insert | STARTED | {"insert"=>"products", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('65148908e6f1900001b2a581'), "code"=>"20267605", "barcode"=>"20267605", "url"=>"https://world.openfoodfacts.org/product/20267605/cashews-alesto-selection", "product_name"=>"C...
+MONGODB | mongo-db:27017 req:86 | app_development.insert | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:87 conn:1:1 sconn:3 | app_development.find | STARTED | {"find"=>"products", "filter"=>{"code"=>"3228857000906"}, "limit"=>1, "sort"=>{"_id"=>1}, "$db"=>"app_development", "lsid"=>{"id"=><BSON::Binary:0x60180 type=uuid data=0x65837adac3694389...>}}
+MONGODB | mongo-db:27017 req:87 | app_development.find | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:88 conn:1:1 sconn:3 | app_development.insert | STARTED | {"insert"=>"products", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('65148908e6f1900001b2a582'), "code"=>"3228857000906", "barcode"=>"3228857000906 (EAN / EAN-13)", "url"=>"https://world.openfoodfacts.org/product/3228857000906/pain-ams-comple...
+MONGODB | mongo-db:27017 req:88 | app_development.insert | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:89 conn:1:1 sconn:3 | app_development.find | STARTED | {"find"=>"products", "filter"=>{"code"=>"7300400481588"}, "limit"=>1, "sort"=>{"_id"=>1}, "$db"=>"app_development", "lsid"=>{"id"=><BSON::Binary:0x60180 type=uuid data=0x65837adac3694389...>}}
+MONGODB | mongo-db:27017 req:89 | app_development.find | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:90 conn:1:1 sconn:3 | app_development.insert | STARTED | {"insert"=>"products", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('65148909e6f1900001b2a583'), "code"=>"7300400481588", "barcode"=>"7300400481588 (EAN / EAN-13)", "url"=>"https://world.openfoodfacts.org/product/7300400481588/tartine-crousti...
+MONGODB | mongo-db:27017 req:90 | app_development.insert | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:92 conn:1:1 sconn:3 | app_development.find | STARTED | {"find"=>"products", "filter"=>{"code"=>"3045140105502"}, "limit"=>1, "sort"=>{"_id"=>1}, "$db"=>"app_development", "lsid"=>{"id"=><BSON::Binary:0x60180 type=uuid data=0x65837adac3694389...>}}
+MONGODB | mongo-db:27017 req:92 | app_development.find | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:93 conn:1:1 sconn:3 | app_development.insert | STARTED | {"insert"=>"products", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('65148909e6f1900001b2a584'), "code"=>"3045140105502", "barcode"=>"3045140105502 (EAN / EAN-13)", "url"=>"https://world.openfoodfacts.org/product/3045140105502/alpine-milk-mil...
+MONGODB | mongo-db:27017 req:93 | app_development.insert | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:94 conn:1:1 sconn:3 | app_development.find | STARTED | {"find"=>"products", "filter"=>{"code"=>"7300400481595"}, "limit"=>1, "sort"=>{"_id"=>1}, "$db"=>"app_development", "lsid"=>{"id"=><BSON::Binary:0x60180 type=uuid data=0x65837adac3694389...>}}
+MONGODB | mongo-db:27017 req:94 | app_development.find | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:95 conn:1:1 sconn:3 | app_development.insert | STARTED | {"insert"=>"products", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('6514890ae6f1900001b2a585'), "code"=>"7300400481595", "barcode"=>"7300400481595 (EAN / EAN-13)", "url"=>"https://world.openfoodfacts.org/product/7300400481595/tartine-crousti...
+MONGODB | mongo-db:27017 req:95 | app_development.insert | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:96 conn:1:1 sconn:3 | app_development.find | STARTED | {"find"=>"products", "filter"=>{"code"=>"3155251205296"}, "limit"=>1, "sort"=>{"_id"=>1}, "$db"=>"app_development", "lsid"=>{"id"=><BSON::Binary:0x60180 type=uuid data=0x65837adac3694389...>}}
+MONGODB | mongo-db:27017 req:96 | app_development.find | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:97 conn:1:1 sconn:3 | app_development.insert | STARTED | {"insert"=>"products", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('6514890ae6f1900001b2a586'), "code"=>"3155251205296", "barcode"=>"3155251205296 (EAN / EAN-13)", "url"=>"https://world.openfoodfacts.org/product/3155251205296/tartine-doux-pr...
+MONGODB | mongo-db:27017 req:97 | app_development.insert | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:98 conn:1:1 sconn:3 | app_development.find | STARTED | {"find"=>"products", "filter"=>{"code"=>"5411188112709"}, "limit"=>1, "sort"=>{"_id"=>1}, "$db"=>"app_development", "lsid"=>{"id"=><BSON::Binary:0x60180 type=uuid data=0x65837adac3694389...>}}
+MONGODB | mongo-db:27017 req:98 | app_development.find | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:99 conn:1:1 sconn:3 | app_development.insert | STARTED | {"insert"=>"products", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('6514890be6f1900001b2a587'), "code"=>"5411188112709", "barcode"=>"5411188112709 (EAN / EAN-13)", "url"=>"https://world.openfoodfacts.org/product/5411188112709/almonddrink-alp...
+MONGODB | mongo-db:27017 req:99 | app_development.insert | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:100 conn:1:1 sconn:3 | app_development.find | STARTED | {"find"=>"products", "filter"=>{"code"=>"8076809513753"}, "limit"=>1, "sort"=>{"_id"=>1}, "$db"=>"app_development", "lsid"=>{"id"=><BSON::Binary:0x60180 type=uuid data=0x65837adac3694389...>}}
+MONGODB | mongo-db:27017 req:100 | app_development.find | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:101 conn:1:1 sconn:3 | app_development.insert | STARTED | {"insert"=>"products", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('6514890be6f1900001b2a588'), "code"=>"8076809513753", "barcode"=>"8076809513753 (EAN / EAN-13)", "url"=>"https://world.openfoodfacts.org/product/8076809513753/pesto-alla-geno...
+MONGODB | mongo-db:27017 req:101 | app_development.insert | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:102 conn:1:1 sconn:3 | app_development.find | STARTED | {"find"=>"products", "filter"=>{"code"=>"3256540000698"}, "limit"=>1, "sort"=>{"_id"=>1}, "$db"=>"app_development", "lsid"=>{"id"=><BSON::Binary:0x60180 type=uuid data=0x65837adac3694389...>}}
+MONGODB | mongo-db:27017 req:102 | app_development.find | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:103 conn:1:1 sconn:3 | app_development.insert | STARTED | {"insert"=>"products", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('6514890ce6f1900001b2a589'), "code"=>"3256540000698", "barcode"=>"3256540000698 (EAN / EAN-13)", "url"=>"https://world.openfoodfacts.org/product/3256540000698/pain-au-lait-pa...
+MONGODB | mongo-db:27017 req:103 | app_development.insert | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:104 conn:1:1 sconn:3 | app_development.find | STARTED | {"find"=>"products", "filter"=>{"code"=>"5411188103387"}, "limit"=>1, "sort"=>{"_id"=>1}, "$db"=>"app_development", "lsid"=>{"id"=><BSON::Binary:0x60180 type=uuid data=0x65837adac3694389...>}}
+MONGODB | mongo-db:27017 req:104 | app_development.find | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:105 conn:1:1 sconn:3 | app_development.insert | STARTED | {"insert"=>"products", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('6514890ce6f1900001b2a58a'), "code"=>"5411188103387", "barcode"=>"5411188103387 (EAN / EAN-13)", "url"=>"https://world.openfoodfacts.org/product/5411188103387/vanilla-alpro",...
+MONGODB | mongo-db:27017 req:105 | app_development.insert | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:106 conn:1:1 sconn:3 | app_development.find | STARTED | {"find"=>"products", "filter"=>{"code"=>"5411188119098"}, "limit"=>1, "sort"=>{"_id"=>1}, "$db"=>"app_development", "lsid"=>{"id"=><BSON::Binary:0x60180 type=uuid data=0x65837adac3694389...>}}
+MONGODB | mongo-db:27017 req:106 | app_development.find | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:107 conn:1:1 sconn:3 | app_development.insert | STARTED | {"insert"=>"products", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('6514890de6f1900001b2a58b'), "code"=>"5411188119098", "barcode"=>"5411188119098 (EAN / EAN-13)", "url"=>"https://world.openfoodfacts.org/product/5411188119098/natural-with-co...
+MONGODB | mongo-db:27017 req:107 | app_development.insert | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:108 conn:1:1 sconn:3 | app_development.find | STARTED | {"find"=>"products", "filter"=>{"code"=>"8000500037560"}, "limit"=>1, "sort"=>{"_id"=>1}, "$db"=>"app_development", "lsid"=>{"id"=><BSON::Binary:0x60180 type=uuid data=0x65837adac3694389...>}}
+MONGODB | mongo-db:27017 req:108 | app_development.find | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:109 conn:1:1 sconn:3 | app_development.insert | STARTED | {"insert"=>"products", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('6514890ee6f1900001b2a58c'), "code"=>"8000500037560", "barcode"=>"8000500037560 (EAN / EAN-13)", "url"=>"https://world.openfoodfacts.org/product/8000500037560/kinder-bueno", ...
+MONGODB | mongo-db:27017 req:109 | app_development.insert | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:110 conn:1:1 sconn:3 | app_development.find | STARTED | {"find"=>"products", "filter"=>{"code"=>"3033491588136"}, "limit"=>1, "sort"=>{"_id"=>1}, "$db"=>"app_development", "lsid"=>{"id"=><BSON::Binary:0x60180 type=uuid data=0x65837adac3694389...>}}
+MONGODB | mongo-db:27017 req:110 | app_development.find | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:111 conn:1:1 sconn:3 | app_development.insert | STARTED | {"insert"=>"products", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('6514890fe6f1900001b2a58d'), "code"=>"3033491588136", "barcode"=>"3033491588136 (EAN / EAN-13)", "url"=>"https://world.openfoodfacts.org/product/3033491588136/hipro-vanille",...
+MONGODB | mongo-db:27017 req:111 | app_development.insert | SUCCEEDED | 0.000s
+MONGODB | mongo-db:27017 req:112 conn:1:1 sconn:3 | app_development.find | STARTED | {"find"=>"products", "filter"=>{"code"=>"3168930009078"}, "limit"=>1, "sort"=>{"_id"=>1}, "$db"=>"app_development", "lsid"=>{"id"=><BSON::Binary:0x60180 type=uuid data=0x65837adac3694389...>}}
+MONGODB | mongo-db:27017 req:112 | app_development.find | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:113 conn:1:1 sconn:3 | app_development.insert | STARTED | {"insert"=>"products", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('6514890fe6f1900001b2a58e'), "code"=>"3168930009078", "barcode"=>"3168930009078 (EAN / EAN-13)", "url"=>"https://world.openfoodfacts.org/product/3168930009078/flocons-d-avoin...
+MONGODB | mongo-db:27017 req:113 | app_development.insert | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:114 conn:1:1 sconn:3 | app_development.find | STARTED | {"find"=>"products", "filter"=>{"code"=>"4008400404127"}, "limit"=>1, "sort"=>{"_id"=>1}, "$db"=>"app_development", "lsid"=>{"id"=><BSON::Binary:0x60180 type=uuid data=0x65837adac3694389...>}}
+MONGODB | mongo-db:27017 req:114 | app_development.find | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:115 conn:1:1 sconn:3 | app_development.insert | STARTED | {"insert"=>"products", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('65148910e6f1900001b2a58f'), "code"=>"4008400404127", "barcode"=>"4008400404127 (EAN / EAN-13)", "url"=>"https://world.openfoodfacts.org/product/4008400404127/nutella-ferrero...
+MONGODB | mongo-db:27017 req:115 | app_development.insert | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:116 conn:1:1 sconn:3 | app_development.find | STARTED | {"find"=>"products", "filter"=>{"code"=>"4008400401621"}, "limit"=>1, "sort"=>{"_id"=>1}, "$db"=>"app_development", "lsid"=>{"id"=><BSON::Binary:0x60180 type=uuid data=0x65837adac3694389...>}}
+MONGODB | mongo-db:27017 req:116 | app_development.find | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:117 conn:1:1 sconn:3 | app_development.insert | STARTED | {"insert"=>"products", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('65148910e6f1900001b2a590'), "code"=>"4008400401621", "barcode"=>"4008400401621 (EAN / EAN-13)", "url"=>"https://world.openfoodfacts.org/product/4008400401621/nutella-nutella...
+MONGODB | mongo-db:27017 req:117 | app_development.insert | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:118 conn:1:1 sconn:3 | app_development.find | STARTED | {"find"=>"products", "filter"=>{"code"=>"5449000000439"}, "limit"=>1, "sort"=>{"_id"=>1}, "$db"=>"app_development", "lsid"=>{"id"=><BSON::Binary:0x60180 type=uuid data=0x65837adac3694389...>}}
+MONGODB | mongo-db:27017 req:118 | app_development.find | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:119 conn:1:1 sconn:3 | app_development.insert | STARTED | {"insert"=>"products", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('65148910e6f1900001b2a591'), "code"=>"5449000000439", "barcode"=>"5449000000439 (EAN / EAN-13)", "url"=>"https://world.openfoodfacts.org/product/5449000000439/coca-cola-1-5-l...
+MONGODB | mongo-db:27017 req:119 | app_development.insert | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:120 conn:1:1 sconn:3 | app_development.find | STARTED | {"find"=>"products", "filter"=>{"code"=>"3033710084913"}, "limit"=>1, "sort"=>{"_id"=>1}, "$db"=>"app_development", "lsid"=>{"id"=><BSON::Binary:0x60180 type=uuid data=0x65837adac3694389...>}}
+MONGODB | mongo-db:27017 req:120 | app_development.find | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:121 conn:1:1 sconn:3 | app_development.insert | STARTED | {"insert"=>"products", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('65148911e6f1900001b2a592'), "code"=>"3033710084913", "barcode"=>"3033710084913 (EAN / EAN-13)", "url"=>"https://world.openfoodfacts.org/product/3033710084913/arome-maggi-nes...
+MONGODB | mongo-db:27017 req:121 | app_development.insert | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:122 conn:1:1 sconn:3 | app_development.find | STARTED | {"find"=>"products", "filter"=>{"code"=>"5449000131836"}, "limit"=>1, "sort"=>{"_id"=>1}, "$db"=>"app_development", "lsid"=>{"id"=><BSON::Binary:0x60180 type=uuid data=0x65837adac3694389...>}}
+MONGODB | mongo-db:27017 req:122 | app_development.find | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:123 conn:1:1 sconn:3 | app_development.insert | STARTED | {"insert"=>"products", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('65148911e6f1900001b2a593'), "code"=>"5449000131836", "barcode"=>"5449000131836 (EAN / EAN-13)", "url"=>"https://world.openfoodfacts.org/product/5449000131836/coca-cola-zero-...
+MONGODB | mongo-db:27017 req:123 | app_development.insert | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:124 conn:1:1 sconn:3 | app_development.find | STARTED | {"find"=>"products", "filter"=>{"code"=>"3168930163480"}, "limit"=>1, "sort"=>{"_id"=>1}, "$db"=>"app_development", "lsid"=>{"id"=><BSON::Binary:0x60180 type=uuid data=0x65837adac3694389...>}}
+MONGODB | mongo-db:27017 req:124 | app_development.find | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:125 conn:1:1 sconn:3 | app_development.insert | STARTED | {"insert"=>"products", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('65148912e6f1900001b2a594'), "code"=>"3168930163480", "barcode"=>"3168930163480 (EAN / EAN-13)", "url"=>"https://world.openfoodfacts.org/product/3168930163480/alvalle-gazpach...
+MONGODB | mongo-db:27017 req:125 | app_development.insert | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:126 conn:1:1 sconn:3 | app_development.find | STARTED | {"find"=>"products", "filter"=>{"code"=>"7613035040823"}, "limit"=>1, "sort"=>{"_id"=>1}, "$db"=>"app_development", "lsid"=>{"id"=><BSON::Binary:0x60180 type=uuid data=0x65837adac3694389...>}}
+MONGODB | mongo-db:27017 req:126 | app_development.find | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:127 conn:1:1 sconn:3 | app_development.insert | STARTED | {"insert"=>"products", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('65148912e6f1900001b2a595'), "code"=>"7613035040823", "barcode"=>"7613035040823 (EAN / EAN-13)", "url"=>"https://world.openfoodfacts.org/product/7613035040823/nestle-dessert"...
+MONGODB | mongo-db:27017 req:127 | app_development.insert | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:129 conn:1:1 sconn:3 | app_development.find | STARTED | {"find"=>"products", "filter"=>{"code"=>"7622201809638"}, "limit"=>1, "sort"=>{"_id"=>1}, "$db"=>"app_development", "lsid"=>{"id"=><BSON::Binary:0x60180 type=uuid data=0x65837adac3694389...>}}
+MONGODB | mongo-db:27017 req:129 | app_development.find | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:130 conn:1:1 sconn:3 | app_development.insert | STARTED | {"insert"=>"products", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('65148913e6f1900001b2a596'), "code"=>"7622201809638", "barcode"=>"7622201809638 (EAN / EAN-13)", "url"=>"https://world.openfoodfacts.org/product/7622201809638/napolitain-l-or...
+MONGODB | mongo-db:27017 req:130 | app_development.insert | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:131 conn:1:1 sconn:3 | app_development.find | STARTED | {"find"=>"products", "filter"=>{"code"=>"3155250358788"}, "limit"=>1, "sort"=>{"_id"=>1}, "$db"=>"app_development", "lsid"=>{"id"=><BSON::Binary:0x60180 type=uuid data=0x65837adac3694389...>}}
+MONGODB | mongo-db:27017 req:131 | app_development.find | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:132 conn:1:1 sconn:3 | app_development.insert | STARTED | {"insert"=>"products", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('65148913e6f1900001b2a597'), "code"=>"3155250358788", "barcode"=>"3155250358788 (EAN / EAN-13)", "url"=>"https://world.openfoodfacts.org/product/3155250358788/primevere", "pr...
+MONGODB | mongo-db:27017 req:132 | app_development.insert | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:133 conn:1:1 sconn:3 | app_development.find | STARTED | {"find"=>"products", "filter"=>{"code"=>"3225350000501"}, "limit"=>1, "sort"=>{"_id"=>1}, "$db"=>"app_development", "lsid"=>{"id"=><BSON::Binary:0x60180 type=uuid data=0x65837adac3694389...>}}
+MONGODB | mongo-db:27017 req:133 | app_development.find | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:134 conn:1:1 sconn:3 | app_development.insert | STARTED | {"insert"=>"products", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('65148914e6f1900001b2a598'), "code"=>"3225350000501", "barcode"=>"3225350000501 (EAN / EAN-13)", "url"=>"https://world.openfoodfacts.org/product/3225350000501/pulco-lemon", "...
+MONGODB | mongo-db:27017 req:134 | app_development.insert | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:135 conn:1:1 sconn:3 | app_development.find | STARTED | {"find"=>"products", "filter"=>{"code"=>"20724696"}, "limit"=>1, "sort"=>{"_id"=>1}, "$db"=>"app_development", "lsid"=>{"id"=><BSON::Binary:0x60180 type=uuid data=0x65837adac3694389...>}}
+MONGODB | mongo-db:27017 req:135 | app_development.find | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:136 conn:1:1 sconn:3 | app_development.insert | STARTED | {"insert"=>"products", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('65148914e6f1900001b2a599'), "code"=>"20724696", "barcode"=>"20724696", "url"=>"https://world.openfoodfacts.org/product/20724696/californian-almond-alesto", "product_name"=>"...
+MONGODB | mongo-db:27017 req:136 | app_development.insert | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:137 conn:1:1 sconn:3 | app_development.find | STARTED | {"find"=>"products", "filter"=>{"code"=>"7613035833272"}, "limit"=>1, "sort"=>{"_id"=>1}, "$db"=>"app_development", "lsid"=>{"id"=><BSON::Binary:0x60180 type=uuid data=0x65837adac3694389...>}}
+MONGODB | mongo-db:27017 req:137 | app_development.find | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:138 conn:1:1 sconn:3 | app_development.insert | STARTED | {"insert"=>"products", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('65148915e6f1900001b2a59a'), "code"=>"7613035833272", "barcode"=>"7613035833272 (EAN / EAN-13)", "url"=>"https://world.openfoodfacts.org/product/7613035833272/perrier", "prod...
+MONGODB | mongo-db:27017 req:138 | app_development.insert | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:139 conn:1:1 sconn:3 | app_development.find | STARTED | {"find"=>"products", "filter"=>{"code"=>"7622300336738"}, "limit"=>1, "sort"=>{"_id"=>1}, "$db"=>"app_development", "lsid"=>{"id"=><BSON::Binary:0x60180 type=uuid data=0x65837adac3694389...>}}
+MONGODB | mongo-db:27017 req:139 | app_development.find | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:140 conn:1:1 sconn:3 | app_development.insert | STARTED | {"insert"=>"products", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('65148915e6f1900001b2a59b'), "code"=>"7622300336738", "barcode"=>"7622300336738 (EAN / EAN-13)", "url"=>"https://world.openfoodfacts.org/product/7622300336738/oreo-mondelez",...
+MONGODB | mongo-db:27017 req:140 | app_development.insert | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:141 conn:1:1 sconn:3 | app_development.find | STARTED | {"find"=>"products", "filter"=>{"code"=>"3178530410105"}, "limit"=>1, "sort"=>{"_id"=>1}, "$db"=>"app_development", "lsid"=>{"id"=><BSON::Binary:0x60180 type=uuid data=0x65837adac3694389...>}}
+MONGODB | mongo-db:27017 req:141 | app_development.find | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:142 conn:1:1 sconn:3 | app_development.insert | STARTED | {"insert"=>"products", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('65148916e6f1900001b2a59c'), "code"=>"3178530410105", "barcode"=>"3178530410105 (EAN / EAN-13)", "url"=>"https://world.openfoodfacts.org/product/3178530410105/petites-madelei...
+MONGODB | mongo-db:27017 req:142 | app_development.insert | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:143 conn:1:1 sconn:3 | app_development.find | STARTED | {"find"=>"products", "filter"=>{"code"=>"3451790988677"}, "limit"=>1, "sort"=>{"_id"=>1}, "$db"=>"app_development", "lsid"=>{"id"=><BSON::Binary:0x60180 type=uuid data=0x65837adac3694389...>}}
+MONGODB | mongo-db:27017 req:143 | app_development.find | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:144 conn:1:1 sconn:3 | app_development.insert | STARTED | {"insert"=>"products", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('65148916e6f1900001b2a59d'), "code"=>"3451790988677", "barcode"=>"3451790988677 (EAN / EAN-13)", "url"=>"https://world.openfoodfacts.org/product/3451790988677/le-beurre-tendr...
+MONGODB | mongo-db:27017 req:144 | app_development.insert | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:145 conn:1:1 sconn:3 | app_development.find | STARTED | {"find"=>"products", "filter"=>{"code"=>"8712100871986"}, "limit"=>1, "sort"=>{"_id"=>1}, "$db"=>"app_development", "lsid"=>{"id"=><BSON::Binary:0x60180 type=uuid data=0x65837adac3694389...>}}
+MONGODB | mongo-db:27017 req:145 | app_development.find | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:146 conn:1:1 sconn:3 | app_development.insert | STARTED | {"insert"=>"products", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('65148916e6f1900001b2a59e'), "code"=>"8712100871986", "barcode"=>"8712100871986 (EAN / EAN-13)", "url"=>"https://world.openfoodfacts.org/product/8712100871986/l-originale-mou...
+MONGODB | mongo-db:27017 req:146 | app_development.insert | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:147 conn:1:1 sconn:3 | app_development.find | STARTED | {"find"=>"products", "filter"=>{"code"=>"8715700017006"}, "limit"=>1, "sort"=>{"_id"=>1}, "$db"=>"app_development", "lsid"=>{"id"=><BSON::Binary:0x60180 type=uuid data=0x65837adac3694389...>}}
+MONGODB | mongo-db:27017 req:147 | app_development.find | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:148 conn:1:1 sconn:3 | app_development.insert | STARTED | {"insert"=>"products", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('65148917e6f1900001b2a59f'), "code"=>"8715700017006", "barcode"=>"8715700017006 (EAN / EAN-13)", "url"=>"https://world.openfoodfacts.org/product/8715700017006/tomato-ketchup-...
+MONGODB | mongo-db:27017 req:148 | app_development.insert | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:149 conn:1:1 sconn:3 | app_development.find | STARTED | {"find"=>"products", "filter"=>{"code"=>"59032823"}, "limit"=>1, "sort"=>{"_id"=>1}, "$db"=>"app_development", "lsid"=>{"id"=><BSON::Binary:0x60180 type=uuid data=0x65837adac3694389...>}}
+MONGODB | mongo-db:27017 req:149 | app_development.find | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:150 conn:1:1 sconn:3 | app_development.insert | STARTED | {"insert"=>"products", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('65148917e6f1900001b2a5a0'), "code"=>"59032823", "barcode"=>"59032823", "url"=>"https://world.openfoodfacts.org/product/59032823/nutella", "product_name"=>"Nutella - 630 g", ...
+MONGODB | mongo-db:27017 req:150 | app_development.insert | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:151 conn:1:1 sconn:3 | app_development.find | STARTED | {"find"=>"products", "filter"=>{"code"=>"3159470000120"}, "limit"=>1, "sort"=>{"_id"=>1}, "$db"=>"app_development", "lsid"=>{"id"=><BSON::Binary:0x60180 type=uuid data=0x65837adac3694389...>}}
+MONGODB | mongo-db:27017 req:151 | app_development.find | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:152 conn:1:1 sconn:3 | app_development.insert | STARTED | {"insert"=>"products", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('65148918e6f1900001b2a5a1'), "code"=>"3159470000120", "barcode"=>"3159470000120 (EAN / EAN-13)", "url"=>"https://world.openfoodfacts.org/product/3159470000120/corn-flakes-kel...
+MONGODB | mongo-db:27017 req:152 | app_development.insert | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:153 conn:1:1 sconn:3 | app_development.find | STARTED | {"find"=>"products", "filter"=>{"code"=>"5000159461122"}, "limit"=>1, "sort"=>{"_id"=>1}, "$db"=>"app_development", "lsid"=>{"id"=><BSON::Binary:0x60180 type=uuid data=0x65837adac3694389...>}}
+MONGODB | mongo-db:27017 req:153 | app_development.find | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:154 conn:1:1 sconn:3 | app_development.insert | STARTED | {"insert"=>"products", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('65148919e6f1900001b2a5a2'), "code"=>"5000159461122", "barcode"=>"5000159461122 (EAN / EAN-13)", "url"=>"https://world.openfoodfacts.org/product/5000159461122/milk-chocolate-...
+MONGODB | mongo-db:27017 req:154 | app_development.insert | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:155 conn:1:1 sconn:3 | app_development.find | STARTED | {"find"=>"products", "filter"=>{"code"=>"7300400481571"}, "limit"=>1, "sort"=>{"_id"=>1}, "$db"=>"app_development", "lsid"=>{"id"=><BSON::Binary:0x60180 type=uuid data=0x65837adac3694389...>}}
+MONGODB | mongo-db:27017 req:155 | app_development.find | SUCCEEDED | 0.002s
+MONGODB | mongo-db:27017 req:156 conn:1:1 sconn:3 | app_development.insert | STARTED | {"insert"=>"products", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('65148919e6f1900001b2a5a3'), "code"=>"7300400481571", "barcode"=>"7300400481571 (EAN / EAN-13)", "url"=>"https://world.openfoodfacts.org/product/7300400481571/wasa", "product...
+MONGODB | mongo-db:27017 req:156 | app_development.insert | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:157 conn:1:1 sconn:3 | app_development.find | STARTED | {"find"=>"products", "filter"=>{"code"=>"8715700407760"}, "limit"=>1, "sort"=>{"_id"=>1}, "$db"=>"app_development", "lsid"=>{"id"=><BSON::Binary:0x60180 type=uuid data=0x65837adac3694389...>}}
+MONGODB | mongo-db:27017 req:157 | app_development.find | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:158 conn:1:1 sconn:3 | app_development.insert | STARTED | {"insert"=>"products", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('65148919e6f1900001b2a5a4'), "code"=>"8715700407760", "barcode"=>"8715700407760 (EAN / EAN-13)", "url"=>"https://world.openfoodfacts.org/product/8715700407760/tomato-ketchup-...
+MONGODB | mongo-db:27017 req:158 | app_development.insert | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:159 conn:1:1 sconn:3 | app_development.find | STARTED | {"find"=>"products", "filter"=>{"code"=>""}, "limit"=>1, "sort"=>{"_id"=>1}, "$db"=>"app_development", "lsid"=>{"id"=><BSON::Binary:0x60180 type=uuid data=0x65837adac3694389...>}}
+MONGODB | mongo-db:27017 req:159 | app_development.find | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:160 conn:1:1 sconn:3 | app_development.insert | STARTED | {"insert"=>"products", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('6514891ae6f1900001b2a5a5'), "code"=>"", "barcode"=>"", "url"=>"https://world.openfoodfacts.org/product/20005733/walnusskerne-lidl", "product_name"=>"Walnusskerne - Lidl - 20...
+MONGODB | mongo-db:27017 req:160 | app_development.insert | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:161 conn:1:1 sconn:3 | app_development.find | STARTED | {"find"=>"products", "filter"=>{"code"=>"3229820782560"}, "limit"=>1, "sort"=>{"_id"=>1}, "$db"=>"app_development", "lsid"=>{"id"=><BSON::Binary:0x60180 type=uuid data=0x65837adac3694389...>}}
+MONGODB | mongo-db:27017 req:161 | app_development.find | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:162 conn:1:1 sconn:3 | app_development.insert | STARTED | {"insert"=>"products", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('6514891ae6f1900001b2a5a6'), "code"=>"3229820782560", "barcode"=>"3229820782560 (EAN / EAN-13)", "url"=>"https://world.openfoodfacts.org/product/3229820782560/muesli-superfru...
+MONGODB | mongo-db:27017 req:162 | app_development.insert | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:163 conn:1:1 sconn:3 | app_development.find | STARTED | {"find"=>"products", "filter"=>{"code"=>"8076800195057"}, "limit"=>1, "sort"=>{"_id"=>1}, "$db"=>"app_development", "lsid"=>{"id"=><BSON::Binary:0x60180 type=uuid data=0x65837adac3694389...>}}
+MONGODB | mongo-db:27017 req:163 | app_development.find | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:164 conn:1:1 sconn:3 | app_development.insert | STARTED | {"insert"=>"products", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('6514891be6f1900001b2a5a7'), "code"=>"8076800195057", "barcode"=>"8076800195057 (EAN / EAN-13)", "url"=>"https://world.openfoodfacts.org/product/8076800195057/spaghetti-n-5-b...
+MONGODB | mongo-db:27017 req:164 | app_development.insert | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:165 conn:1:1 sconn:3 | app_development.find | STARTED | {"find"=>"products", "filter"=>{"code"=>"3228857000852"}, "limit"=>1, "sort"=>{"_id"=>1}, "$db"=>"app_development", "lsid"=>{"id"=><BSON::Binary:0x60180 type=uuid data=0x65837adac3694389...>}}
+MONGODB | mongo-db:27017 req:165 | app_development.find | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:166 conn:1:1 sconn:3 | app_development.insert | STARTED | {"insert"=>"products", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('6514891be6f1900001b2a5a8'), "code"=>"3228857000852", "barcode"=>"3228857000852 (EAN / EAN-13)", "url"=>"https://world.openfoodfacts.org/product/3228857000852/pain-de-mie-san...
+MONGODB | mongo-db:27017 req:166 | app_development.insert | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:167 conn:1:1 sconn:3 | app_development.find | STARTED | {"find"=>"products", "filter"=>{"code"=>"3033710065967"}, "limit"=>1, "sort"=>{"_id"=>1}, "$db"=>"app_development", "lsid"=>{"id"=><BSON::Binary:0x60180 type=uuid data=0x65837adac3694389...>}}
+MONGODB | mongo-db:27017 req:167 | app_development.find | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:168 conn:1:1 sconn:3 | app_development.insert | STARTED | {"insert"=>"products", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('6514891ce6f1900001b2a5a9'), "code"=>"3033710065967", "barcode"=>"3033710065967 (EAN / EAN-13)", "url"=>"https://world.openfoodfacts.org/product/3033710065967/nesquik-cacao-n...
+MONGODB | mongo-db:27017 req:168 | app_development.insert | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:169 conn:1:1 sconn:3 | app_development.find | STARTED | {"find"=>"products", "filter"=>{"code"=>"3760049790214"}, "limit"=>1, "sort"=>{"_id"=>1}, "$db"=>"app_development", "lsid"=>{"id"=><BSON::Binary:0x60180 type=uuid data=0x65837adac3694389...>}}
+MONGODB | mongo-db:27017 req:169 | app_development.find | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:170 conn:1:1 sconn:3 | app_development.insert | STARTED | {"insert"=>"products", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('6514891de6f1900001b2a5aa'), "code"=>"3760049790214", "barcode"=>"3760049790214 (EAN / EAN-13)", "url"=>"https://world.openfoodfacts.org/product/3760049790214/pain-de-mie-bio...
+MONGODB | mongo-db:27017 req:170 | app_development.insert | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:172 conn:1:1 sconn:3 | app_development.find | STARTED | {"find"=>"products", "filter"=>{"code"=>"20047238"}, "limit"=>1, "sort"=>{"_id"=>1}, "$db"=>"app_development", "lsid"=>{"id"=><BSON::Binary:0x60180 type=uuid data=0x65837adac3694389...>}}
+MONGODB | mongo-db:27017 req:172 | app_development.find | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:173 conn:1:1 sconn:3 | app_development.insert | STARTED | {"insert"=>"products", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('6514891de6f1900001b2a5ab'), "code"=>"20047238", "barcode"=>"20047238", "url"=>"https://world.openfoodfacts.org/product/20047238/alesto-mixed-nuts-walnuts-hazelnuts-cashews-a...
+MONGODB | mongo-db:27017 req:173 | app_development.insert | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:174 conn:1:1 sconn:3 | app_development.find | STARTED | {"find"=>"products", "filter"=>{"code"=>"3175680015228"}, "limit"=>1, "sort"=>{"_id"=>1}, "$db"=>"app_development", "lsid"=>{"id"=><BSON::Binary:0x60180 type=uuid data=0x65837adac3694389...>}}
+MONGODB | mongo-db:27017 req:174 | app_development.find | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:175 conn:1:1 sconn:3 | app_development.insert | STARTED | {"insert"=>"products", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('6514891ee6f1900001b2a5ac'), "code"=>"3175680015228", "barcode"=>"3175680015228 (EAN / EAN-13)", "url"=>"https://world.openfoodfacts.org/product/3175680015228/levure-de-biere...
+MONGODB | mongo-db:27017 req:175 | app_development.insert | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:176 conn:1:1 sconn:3 | app_development.find | STARTED | {"find"=>"products", "filter"=>{"code"=>"3068320123264"}, "limit"=>1, "sort"=>{"_id"=>1}, "$db"=>"app_development", "lsid"=>{"id"=><BSON::Binary:0x60180 type=uuid data=0x65837adac3694389...>}}
+MONGODB | mongo-db:27017 req:176 | app_development.find | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:177 conn:1:1 sconn:3 | app_development.insert | STARTED | {"insert"=>"products", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('6514891ee6f1900001b2a5ad'), "code"=>"3068320123264", "barcode"=>"3068320123264 (EAN / EAN-13)", "url"=>"https://world.openfoodfacts.org/product/3068320123264/la-salvetat", "...
+MONGODB | mongo-db:27017 req:177 | app_development.insert | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:178 conn:1:1 sconn:3 | app_development.find | STARTED | {"find"=>"products", "filter"=>{"code"=>"7622210601988"}, "limit"=>1, "sort"=>{"_id"=>1}, "$db"=>"app_development", "lsid"=>{"id"=><BSON::Binary:0x60180 type=uuid data=0x65837adac3694389...>}}
+MONGODB | mongo-db:27017 req:178 | app_development.find | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:179 conn:1:1 sconn:3 | app_development.insert | STARTED | {"insert"=>"products", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('6514891fe6f1900001b2a5ae'), "code"=>"7622210601988", "barcode"=>"7622210601988 (EAN / EAN-13)", "url"=>"https://world.openfoodfacts.org/product/7622210601988/granola-lu", "p...
+MONGODB | mongo-db:27017 req:179 | app_development.insert | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:180 conn:1:1 sconn:3 | app_development.find | STARTED | {"find"=>"products", "filter"=>{"code"=>"3228857001231"}, "limit"=>1, "sort"=>{"_id"=>1}, "$db"=>"app_development", "lsid"=>{"id"=><BSON::Binary:0x60180 type=uuid data=0x65837adac3694389...>}}
+MONGODB | mongo-db:27017 req:180 | app_development.find | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:181 conn:1:1 sconn:3 | app_development.insert | STARTED | {"insert"=>"products", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('6514891fe6f1900001b2a5af'), "code"=>"3228857001231", "barcode"=>"3228857001231 (EAN / EAN-13)", "url"=>"https://world.openfoodfacts.org/product/3228857001231/brioche-tressee...
+MONGODB | mongo-db:27017 req:181 | app_development.insert | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:182 conn:1:1 sconn:3 | app_development.find | STARTED | {"find"=>"products", "filter"=>{"code"=>"87157215"}, "limit"=>1, "sort"=>{"_id"=>1}, "$db"=>"app_development", "lsid"=>{"id"=><BSON::Binary:0x60180 type=uuid data=0x65837adac3694389...>}}
+MONGODB | mongo-db:27017 req:182 | app_development.find | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:183 conn:1:1 sconn:3 | app_development.insert | STARTED | {"insert"=>"products", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('65148920e6f1900001b2a5b0'), "code"=>"87157215", "barcode"=>"87157215", "url"=>"https://world.openfoodfacts.org/product/87157215/ketchup-heinz", "product_name"=>"Ketchup - He...
+MONGODB | mongo-db:27017 req:183 | app_development.insert | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:184 conn:1:1 sconn:3 | app_development.find | STARTED | {"find"=>"products", "filter"=>{"code"=>"7311070032611"}, "limit"=>1, "sort"=>{"_id"=>1}, "$db"=>"app_development", "lsid"=>{"id"=><BSON::Binary:0x60180 type=uuid data=0x65837adac3694389...>}}
+MONGODB | mongo-db:27017 req:184 | app_development.find | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:185 conn:1:1 sconn:3 | app_development.insert | STARTED | {"insert"=>"products", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('65148920e6f1900001b2a5b1'), "code"=>"7311070032611", "barcode"=>"7311070032611 (EAN / EAN-13)", "url"=>"https://world.openfoodfacts.org/product/7311070032611/krisprolls", "p...
+MONGODB | mongo-db:27017 req:185 | app_development.insert | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:186 conn:1:1 sconn:3 | app_development.find | STARTED | {"find"=>"products", "filter"=>{"code"=>"54491472"}, "limit"=>1, "sort"=>{"_id"=>1}, "$db"=>"app_development", "lsid"=>{"id"=><BSON::Binary:0x60180 type=uuid data=0x65837adac3694389...>}}
+MONGODB | mongo-db:27017 req:186 | app_development.find | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:187 conn:1:1 sconn:3 | app_development.insert | STARTED | {"insert"=>"products", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('65148920e6f1900001b2a5b2'), "code"=>"54491472", "barcode"=>"54491472", "url"=>"https://world.openfoodfacts.org/product/54491472/coca-cola-regular", "product_name"=>"Coca Col...
+MONGODB | mongo-db:27017 req:187 | app_development.insert | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:188 conn:1:1 sconn:3 | app_development.find | STARTED | {"find"=>"products", "filter"=>{"code"=>"7613035144699"}, "limit"=>1, "sort"=>{"_id"=>1}, "$db"=>"app_development", "lsid"=>{"id"=><BSON::Binary:0x60180 type=uuid data=0x65837adac3694389...>}}
+MONGODB | mongo-db:27017 req:188 | app_development.find | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:189 conn:1:1 sconn:3 | app_development.insert | STARTED | {"insert"=>"products", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('65148921e6f1900001b2a5b3'), "code"=>"7613035144699", "barcode"=>"7613035144699 (EAN / EAN-13)", "url"=>"https://world.openfoodfacts.org/product/7613035144699/nestle-nesquik-...
+MONGODB | mongo-db:27017 req:189 | app_development.insert | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:190 conn:1:1 sconn:3 | app_development.find | STARTED | {"find"=>"products", "filter"=>{"code"=>"7622201133337"}, "limit"=>1, "sort"=>{"_id"=>1}, "$db"=>"app_development", "lsid"=>{"id"=><BSON::Binary:0x60180 type=uuid data=0x65837adac3694389...>}}
+MONGODB | mongo-db:27017 req:190 | app_development.find | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:191 conn:1:1 sconn:3 | app_development.insert | STARTED | {"insert"=>"products", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('65148922e6f1900001b2a5b4'), "code"=>"7622201133337", "barcode"=>"7622201133337 (EAN / EAN-13)", "url"=>"https://world.openfoodfacts.org/product/7622201133337/figolu-lu", "pr...
+MONGODB | mongo-db:27017 req:191 | app_development.insert | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:192 conn:1:1 sconn:3 | app_development.find | STARTED | {"find"=>"products", "filter"=>{"code"=>"4056489007180"}, "limit"=>1, "sort"=>{"_id"=>1}, "$db"=>"app_development", "lsid"=>{"id"=><BSON::Binary:0x60180 type=uuid data=0x65837adac3694389...>}}
+MONGODB | mongo-db:27017 req:192 | app_development.find | SUCCEEDED | 0.002s
+MONGODB | mongo-db:27017 req:193 conn:1:1 sconn:3 | app_development.insert | STARTED | {"insert"=>"products", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('65148922e6f1900001b2a5b5'), "code"=>"4056489007180", "barcode"=>"4056489007180 (EAN / EAN-13)", "url"=>"https://world.openfoodfacts.org/product/4056489007180/pain-de-mie-spe...
+MONGODB | mongo-db:27017 req:193 | app_development.insert | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:194 conn:1:1 sconn:3 | app_development.find | STARTED | {"find"=>"products", "filter"=>{"code"=>"8711200548002"}, "limit"=>1, "sort"=>{"_id"=>1}, "$db"=>"app_development", "lsid"=>{"id"=><BSON::Binary:0x60180 type=uuid data=0x65837adac3694389...>}}
+MONGODB | mongo-db:27017 req:194 | app_development.find | SUCCEEDED | 0.002s
+MONGODB | mongo-db:27017 req:195 conn:1:1 sconn:3 | app_development.insert | STARTED | {"insert"=>"products", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('65148922e6f1900001b2a5b6'), "code"=>"8711200548002", "barcode"=>"8711200548002 (EAN / EAN-13)", "url"=>"https://world.openfoodfacts.org/product/8711200548002/amora-grand-may...
+MONGODB | mongo-db:27017 req:195 | app_development.insert | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:196 conn:1:1 sconn:3 | app_development.find | STARTED | {"find"=>"products", "filter"=>{"code"=>"4006985902304"}, "limit"=>1, "sort"=>{"_id"=>1}, "$db"=>"app_development", "lsid"=>{"id"=><BSON::Binary:0x60180 type=uuid data=0x65837adac3694389...>}}
+MONGODB | mongo-db:27017 req:196 | app_development.find | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:197 conn:1:1 sconn:3 | app_development.insert | STARTED | {"insert"=>"products", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('65148923e6f1900001b2a5b7'), "code"=>"4006985902304", "barcode"=>"4006985902304 (EAN / EAN-13)", "url"=>"https://world.openfoodfacts.org/product/4006985902304/l-original-caca...
+MONGODB | mongo-db:27017 req:197 | app_development.insert | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:198 conn:1:1 sconn:3 | app_development.find | STARTED | {"find"=>"products", "filter"=>{"code"=>"7622210421968"}, "limit"=>1, "sort"=>{"_id"=>1}, "$db"=>"app_development", "lsid"=>{"id"=><BSON::Binary:0x60180 type=uuid data=0x65837adac3694389...>}}
+MONGODB | mongo-db:27017 req:198 | app_development.find | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:199 conn:1:1 sconn:3 | app_development.insert | STARTED | {"insert"=>"products", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('65148924e6f1900001b2a5b8'), "code"=>"7622210421968", "barcode"=>"7622210421968 (EAN / EAN-13)", "url"=>"https://world.openfoodfacts.org/product/7622210421968/veritable-petit...
+MONGODB | mongo-db:27017 req:199 | app_development.insert | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:200 conn:1:1 sconn:3 | app_development.find | STARTED | {"find"=>"products", "filter"=>{"code"=>"3366321052386"}, "limit"=>1, "sort"=>{"_id"=>1}, "$db"=>"app_development", "lsid"=>{"id"=><BSON::Binary:0x60180 type=uuid data=0x65837adac3694389...>}}
+MONGODB | mongo-db:27017 req:200 | app_development.find | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:201 conn:1:1 sconn:3 | app_development.insert | STARTED | {"insert"=>"products", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('65148924e6f1900001b2a5b9'), "code"=>"3366321052386", "barcode"=>"3366321052386 (EAN / EAN-13)", "url"=>"https://world.openfoodfacts.org/product/3366321052386/st-hubert-bio-d...
+MONGODB | mongo-db:27017 req:201 | app_development.insert | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:202 conn:1:1 sconn:3 | app_development.find | STARTED | {"find"=>"products", "filter"=>{"code"=>"5010029220773"}, "limit"=>1, "sort"=>{"_id"=>1}, "$db"=>"app_development", "lsid"=>{"id"=><BSON::Binary:0x60180 type=uuid data=0x65837adac3694389...>}}
+MONGODB | mongo-db:27017 req:202 | app_development.find | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:203 conn:1:1 sconn:3 | app_development.insert | STARTED | {"insert"=>"products", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('65148925e6f1900001b2a5ba'), "code"=>"5010029220773", "barcode"=>"5010029220773 (EAN / EAN-13)", "url"=>"https://world.openfoodfacts.org/product/5010029220773/weetabix", "pro...
+MONGODB | mongo-db:27017 req:203 | app_development.insert | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:204 conn:1:1 sconn:3 | app_development.find | STARTED | {"find"=>"products", "filter"=>{"code"=>"3392460480827"}, "limit"=>1, "sort"=>{"_id"=>1}, "$db"=>"app_development", "lsid"=>{"id"=><BSON::Binary:0x60180 type=uuid data=0x65837adac3694389...>}}
+MONGODB | mongo-db:27017 req:204 | app_development.find | SUCCEEDED | 0.002s
+MONGODB | mongo-db:27017 req:205 conn:1:1 sconn:3 | app_development.insert | STARTED | {"insert"=>"products", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('65148925e6f1900001b2a5bb'), "code"=>"3392460480827", "barcode"=>"3392460480827 (EAN / EAN-13)", "url"=>"https://world.openfoodfacts.org/product/3392460480827/biscottes-heude...
+MONGODB | mongo-db:27017 req:205 | app_development.insert | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:206 conn:1:1 sconn:3 | app_development.find | STARTED | {"find"=>"products", "filter"=>{"code"=>"3251490332080"}, "limit"=>1, "sort"=>{"_id"=>1}, "$db"=>"app_development", "lsid"=>{"id"=><BSON::Binary:0x60180 type=uuid data=0x65837adac3694389...>}}
+MONGODB | mongo-db:27017 req:206 | app_development.find | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:207 conn:1:1 sconn:3 | app_development.insert | STARTED | {"insert"=>"products", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('65148925e6f1900001b2a5bc'), "code"=>"3251490332080", "barcode"=>"3251490332080 (EAN / EAN-13)", "url"=>"https://world.openfoodfacts.org/product/3251490332080/gerble-fig-bran...
+MONGODB | mongo-db:27017 req:207 | app_development.insert | SUCCEEDED | 0.001s
+MONGODB | mongo-db:27017 req:208 conn:1:1 sconn:3 | app_development.find | STARTED | {"find"=>"products", "filter"=>{"code"=>"3033491482953"}, "limit"=>1, "sort"=>{"_id"=>1}, "$db"=>"app_development", "lsid"=>{"id"=><BSON::Binary:0x60180 type=uuid data=0x65837adac3694389...>}}
+MONGODB | mongo-db:27017 req:208 | app_development.find | SUCCEEDED | 0.002s
+MONGODB | mongo-db:27017 req:209 conn:1:1 sconn:3 | app_development.insert | STARTED | {"insert"=>"products", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('65148926e6f1900001b2a5bd'), "code"=>"3033491482953", "barcode"=>"3033491482953 (EAN / EAN-13)", "url"=>"https://world.openfoodfacts.org/product/3033491482953/hipro-myrtille-...
+MONGODB | mongo-db:27017 req:209 | app_development.insert | SUCCEEDED | 0.001s
+[283b4608-5a8f-495f-b17a-e75c48fd78d8] Started GET "/products" for 172.29.0.1 at 2023-09-27 19:57:43 +0000
+[283b4608-5a8f-495f-b17a-e75c48fd78d8] Processing by ProductsController#index as HTML
+[283b4608-5a8f-495f-b17a-e75c48fd78d8] MONGODB | Topology type 'unknown' initializing.
+[283b4608-5a8f-495f-b17a-e75c48fd78d8] MONGODB | There was a change in the members of the 'Unknown' topology.
+[283b4608-5a8f-495f-b17a-e75c48fd78d8] MONGODB | Server mongo-db:27017 initializing.
+[283b4608-5a8f-495f-b17a-e75c48fd78d8] MONGODB | Waiting for up to 30.00 seconds for servers to be scanned: #<Cluster topology=Unknown[mongo-db:27017] servers=[#<Server address=mongo-db:27017 UNKNOWN>]>
+MONGODB | Server description for mongo-db:27017 changed from 'unknown' to 'standalone'.
+MONGODB | Topology type 'Unknown' changed to type 'Single'.
+[283b4608-5a8f-495f-b17a-e75c48fd78d8] MONGODB | mongo-db:27017 req:6 conn:1:1 sconn:6 | app_development.find | STARTED | {"find"=>"products", "filter"=>{}, "limit"=>25, "skip"=>0, "$db"=>"app_development", "lsid"=>{"id"=><BSON::Binary:0x11800 type=uuid data=0xa54d3562ef0f462b...>}}
+[283b4608-5a8f-495f-b17a-e75c48fd78d8] MONGODB | mongo-db:27017 req:6 | app_development.find | SUCCEEDED | 0.003s
+[283b4608-5a8f-495f-b17a-e75c48fd78d8] Completed 200 OK in 67ms (Views: 33.2ms | MongoDB: 2.9ms | Allocations: 22947)
+
+
+MONGODB | Server description for mongo-db:27017 changed from 'standalone' to 'standalone'.
+MONGODB | There was a change in the members of the 'Single' topology.
